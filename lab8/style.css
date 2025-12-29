@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero {
+  background: linear-gradient(135deg, #8f7bff, #f06fc1);
+  color: #fff;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 480px;
+}
+
+.hero-text {
+  max-width: 520px;
+}
+
+.subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: none;
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-img img {
+  width: 420px;
+}
+
+.services,
+.about,
+.process,
+.reviews {
+  padding: 80px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.about-inner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-img img {
+  width: 420px;
+  border-radius: 12px;
+}
+
+.cta {
+  background: linear-gradient(135deg, #f06fc1, #8f7bff);
+  color: #fff;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.steps div {
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.stats {
+  background: #f9f9f9;
+  padding: 60px 0;
+}
+
+.stats-inner {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: bold;
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.review {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .hero-inner,
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img,
+  .about-img img {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 30px;
+  }
+
+  .service-cards,
+  .steps,
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
