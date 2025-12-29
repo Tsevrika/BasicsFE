@@ -1,0 +1,132 @@
+.layout {
+  border-collapse: collapse;
+  width: 900px;
+  height: 220px;
+}
+
+.layout td {
+  border: 2px solid #444;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.row-1 {
+  background-color: #118f8f;
+  color: #db5100;
+}
+
+.row-2 {
+  background-color: #f5f511;
+  color: #6c00db;
+}
+
+.row-1:hover {
+  background-color: #f5f511;
+  color: #6c00db;
+}
+
+.row-2:hover {
+  background-color: #118f8f;
+  color: #db5100;
+}
+
+.split-top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 2px solid #444;
+}
+
+.split-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 2px solid #444;
+}
+
+.cell-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.cell-zone {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-align: center;
+  pointer-events: none;
+  padding: 6px;
+}
+
+.split-top .top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+}
+
+.split-top .bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+}
+
+.split-left .left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+.split-left .right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+.traffic-light {
+  margin-top: 40px;
+  width: 90px;
+  padding: 14px 0;
+  background: #e6e6e6;
+  border: 3px solid #000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.lamp {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.lamp.red {
+  background: red;
+}
+
+.lamp.yellow {
+  background: yellow;
+}
+
+.lamp.green {
+  background: #00b050;
+}
