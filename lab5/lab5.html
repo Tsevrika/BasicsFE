@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>ЛР №5 – JavaScript</title>
+  <style>
+    body { font-family: Arial; }
+    .row { margin: 10px 0; padding: 8px; border: 1px solid #ddd; border-radius: 8px; }
+    .row.error { border: 2px solid red; background: #ffecec; }
+    label { display: block; margin-bottom: 6px; }
+    input { padding: 6px; width: 260px; }
+
+    table, td { border: 1px solid black; border-collapse: collapse; }
+    td { width: 40px; height: 40px; text-align: center; cursor: pointer; }
+  </style>
+</head>
+
+<body>
+  <h2>Завдання 1. Форма (варіант 11)</h2>
+
+  <form id="myForm" novalidate>
+    <div class="row" id="row-name">
+      <label>ПІБ (ТТТТТТ Т.Т.)</label>
+      <input type="text" id="name" placeholder="Кривець А. О." />
+    </div>
+
+    <div class="row" id="row-phone">
+      <label>Телефон ((ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ)</label>
+      <input type="text" id="phone" placeholder="(097)-123-45-67" />
+    </div>
+
+    <div class="row" id="row-faculty">
+      <label>Факультет (ТТТТ)</label>
+      <input type="text" id="faculty" placeholder="ФІОТ" />
+    </div>
+
+    <div class="row" id="row-birth">
+      <label>Дата народж. (ЧЧ.ЧЧ.ЧЧЧЧ)</label>
+      <input type="text" id="birth" placeholder="07.02.2006" />
+    </div>
+
+    <div class="row" id="row-address">
+      <label>Адреса (м. ЧЧЧЧЧЧ)</label>
+      <input type="text" id="address" placeholder="м. 123456" />
+    </div>
+
+    <button type="button" id="checkBtn">Перевірити</button>
+  </form>
+
+  <hr>
+
+  <h2>Завдання 2. Таблиця 6×6</h2>
+  <p>Варіант: <b>11</b> → активна клітинка №11</p>
+
+  <input type="color" id="colorPicker" value="#00aaff" />
+  <table id="table"></table>
+
+  <script src="script.js"></script>
+</body>
+</html>
